@@ -4,11 +4,11 @@ This is a repository to search for misinformation for the upcoming midterm elect
 
 ## Team Members
 
-* ##### Angelina Poltavskiy
+* #### Angelina Poltavskiy
   * **email:** apolt@uw.edu
-* ##### Jade D'Souza
+* #### Jade D'Souza
   * **email:** jadedsou@uw.edu
-* ##### Siya Sharma
+* #### Siya Sharma
   * **email:** siyas@uw.edu
-* ##### Zhi Ye
+* #### Zhi Ye
   * **email:** zhijye@yahoo.com

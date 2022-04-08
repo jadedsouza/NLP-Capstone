@@ -1,3 +1,99 @@
-* {
-    background-image: linear-gradient( rgba(15,2, 56), rgba(70,156,232));
+ * {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+
+ }
+
+
+body, head {
+    background-image: linear-gradient(#0F0238, #469CE8);
   }
+
+.intro {
+    margin-top: 10em;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: 8em;
+}
+
+
+
+.navbar {
+    display: inline;
+}
+
+.checkbox input[type="checkbox"] {
+    display: none;
+}
+
+/* navbar on a big screen*/
+
+#hamnav {
+    width: 100%;
+    text-align: center;
+    padding: 3em;
+    margin-top: 50px;
+    align-items: center;
+}
+
+
+#hamitems {
+    float: right;
+    margin-top: 50px;
+}
+
+#hamitems a {
+    /*flex-grow: 1;*/
+    /*flex-basis: 0;*/
+    display: inline-block;
+    padding-right: 3em;
+    text-decoration: none;
+    padding-left: 0;
+}
+
+#hamitems a:hover {
+    text-decoration: underline;
+    color: #B497D6;
+}
+
+#hamitems a:active {
+    text-decoration: underline;
+    color: #B497D6;
+}
+#hamnav label,
+#hamburger {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        margin-top: 0.5em;
+    }
+    /* vertical menu */
+    #hamitems a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 0.1em solid;
+    }
+    /* show ham icon */
+    #hamnav label {
+        display: block;
+        color: #B497D6;
+        font-style: normal;
+        font-size: 1.2em;
+        padding-right: .75em;
+        float: right;
+    }
+    /* show/hide menu */
+    #hamitems {
+        display: none;
+    }
+    #hamnav input:checked~#hamitems {
+        display: block;
+    }
+
+}

@@ -80,13 +80,64 @@ body, head {
     margin-top: 1em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    margin-bottom: 10em;
+    margin-bottom: 5em;
 }
 
 .intro img {
     border-radius: 50%;
-    width: 20em;
+    width: 15em;
+    height:15em;
+    margin-top: 2em;
+
 }
+
+.headshots {
+    flex-direction: column;
+    padding: 3em;
+    align-items: center;
+}
+
+.sponsors {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+    /* styling contact form */
+
+    .contactForm {
+        background-color: #0F0238;
+        padding: 2em;
+        border-radius: 5%;
+    }
+
+    .contactForm button,
+    .contactForm[type=submit] {
+        width: 50%;
+        background-color: #B497D6;
+        color: white;
+        padding: 0.8em 1.2em;
+        margin: 0.5em 0;
+        border: none;
+        border-radius: 0.2em;
+        cursor: pointer;
+    }
+    
+    .contactformbutton {
+        text-align: center;
+    }
+    
+    .contactforminput {
+        text-align: center;
+    }
+    
+    .contactforminput p {
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    button[type=submit]:hover {
+        background-color: #0F0238;
+    }
 
 @media screen and (max-width: 768px) {
     .navbar {
@@ -116,4 +167,40 @@ body, head {
         display: block;
     }
 
+}
+
+
+@media screen and (min-width:750px) {
+    
+   
+
+    .intro img {
+        border-radius: 50%;
+        width: 10em;
+        height:10em;
+        margin: 1em;
+    }
+
+    .headshots {
+        flex-direction: row;
+        padding: 0;
+        
+    }
+
+
+
+
+}
+
+
+
+@media screen and (min-width:900px) {
+    
+   
+}
+
+
+
+@media screen and (min-width:1200px) {
+    
 }

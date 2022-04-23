@@ -143,6 +143,7 @@ body, head {
     .contactForm {
         background-color: #0F0238;
         padding: 2em;
+        margin: 0;
         width: 100%;
     }
 
@@ -220,8 +221,6 @@ body, head {
 
 
 @media screen and (min-width:750px) {
-    
-   
 
     .intro img {
         border-radius: 50%;
@@ -236,7 +235,20 @@ body, head {
         
     }
 
+    .features {
+        margin-left: 3em;
+        align-items: center;
+    }
 
+    .headshots {
+        display:flex; 
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .photo {
+        margin:3em;
+    }
 
 
 }

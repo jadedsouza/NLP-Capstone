@@ -257,7 +257,22 @@ body, head {
 
 @media screen and (min-width:900px) {
     
+    .headshots {
+        display: row;
+    }
+
+    .headshots h1, .headshots  p{
+        font-size: 16px;
+    }
    
+    .photo {
+        margin: 0.5em;
+    }
+
+    .img {
+        width: 60px;
+        height: 60px;
+    }
 }
 
 

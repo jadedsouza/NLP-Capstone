@@ -31,12 +31,20 @@ body, head {
 
 }
 
+
 .features h2, .features h3, .features p {
     text-align: left;
     margin-left: 1em;
 }
 
+.features img {
+    width: 100px;
+    height: 100px;
+}
 
+.feature {
+    display: flex;
+}
 
 .features h2 {
     margin-top: 3em;

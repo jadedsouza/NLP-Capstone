@@ -55,9 +55,9 @@ body, head {
     margin-top: 6em;
 }
 
-.navbar {
+/* .navbar {
     display: inline;
-}
+} */
 
 .checkbox input[type="checkbox"] {
     display: none;
@@ -66,10 +66,10 @@ body, head {
 /* navbar on a big screen*/
 
 #hamnav {
-    width: 100%;
     text-align: center;
-    padding: 3em;
-    margin-top: 50px;
+    padding-top: 3em;
+    margin-right: 1em;
+    margin-top: 1em;
     align-items: center;
 }
 
@@ -143,9 +143,33 @@ body, head {
     .contactForm {
         background-color: #0F0238;
         padding: 2em;
-        margin: 0;
-        width: 100%;
+        margin-left: 0em;
+        width: 82%;
+        display:inline-block;
+        text-align:center;
     }
+
+    .contactForm textarea[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contactForm input[type=email],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
     .contactForm button,
     .contactForm[type=submit] {
@@ -165,7 +189,7 @@ body, head {
     
     .contactforminput {
         text-align: left;
-        margin-left: 2em;
+        padding: 2em;
     }
     
     .contactforminput p {
@@ -179,9 +203,9 @@ body, head {
 
     .logo {
         padding: 0.5em;
-        margin-top: 0;
+        margin-top: 2em;
         width:10em;
-        align-items: center;
+        display: inline-block;
     }
 
     /* .copyright {

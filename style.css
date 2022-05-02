@@ -1,6 +1,5 @@
  * {
-    text-align: center;
-    color: #FFFFFF;
+    color: #0F0238;
     font-family: 'Roboto', sans-serif;
 
  }
@@ -175,7 +174,7 @@ select {
     .contactForm[type=submit] {
         width: 50%;
         background-color: #B497D6;
-        color: white;
+        /* color: white; */
         padding: 0.8em 1.2em;
         margin: 0.5em 0;
         border: none;
@@ -200,14 +199,32 @@ select {
     button[type=submit]:hover {
         background-color: #0F0238;
     }
+ /* logo and team name at top left corner */
+    .team {
+        display: flex;
+        margin-top: 2em;
+
+    }
+
+    .team-name {
+        margin-top: 1.5em;
+    }
 
     .logo {
         padding: 0.5em;
-        margin-top: 2em;
-        width:10em;
-        display: inline-block;
+        width:4em;
     }
 
+    .first-page {
+        background-color: #B497D6;
+        padding-bottom: 20em;
+        padding-left: 2em;
+        padding-right: 65%;
+        padding-top: 0em;
+        margin-top:0em;
+        text-emphasis: left;
+        color:#0F0238; 
+    }
     /* .copyright {
         text-align: left;
     } */

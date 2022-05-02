@@ -9,10 +9,6 @@
  }
 
 
-body, head {
-    background-image: linear-gradient(#0F0238, #469CE8);
-  }
-
 .heading {
     align-items: center;
 }
@@ -216,7 +212,6 @@ select {
     }
 
     .first-page {
-        background-color: #B497D6;
         padding-bottom: 20em;
         padding-left: 2em;
         padding-right: 65%;

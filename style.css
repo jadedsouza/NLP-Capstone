@@ -1,6 +1,6 @@
  * {
     color: #0F0238;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 
  }
 
@@ -10,8 +10,62 @@
 
 
 .heading {
-    align-items: center;
+    align-items: left;
+    margin-top: 5em;
+    font-size: 16px;
 }
+
+.front-img .team {
+    display: inline-block;
+}
+
+.front-img {
+    display: flex;
+    margin-left: 15em;
+    margin-top: 10em;
+}
+
+.front-img .team .logo {
+    width: 20em;
+}
+
+.team .plus {
+    width: 7em;
+    margin-top: 8em;
+}
+
+.team .logo {
+    width: 10em;
+}
+
+.team .logo2 {
+    width: 20em;
+    margin-top: 6em;
+    margin-left: 3em;
+}
+
+.block-content {
+    background-color: black;
+    color:#ffffff; 
+    padding-top: 4em;
+    padding-bottom: 5em;
+}
+
+.block-content h2 {
+    color:#ffffff; 
+    text-align: left;
+    margin-left: 4em;
+}
+
+.block-content p {
+    color:#ffffff; 
+    text-align: left;
+    padding-left: 8em;
+    padding-bottom: 3em;
+    padding-right: 20em;
+}
+
+
 
 .mission {
     margin-top: 6em;
@@ -26,41 +80,90 @@
 
 }
 
+.solution {
+    text-align: center;
+    margin-top: 10em;
+    margin-bottom: 10em;
+    padding-left: 12em;
+    padding-right: 12em;
+}
 
-.features h2, .features h3, .features p {
+
+.features h2, .questions h2 {
     text-align: left;
     margin-left: 1em;
+    margin-bottom: 2em;
 }
 
-.features img {
-    width: 100px;
-    height: 100px;
+.questions h2 {
+    margin-left: 5em;
 }
 
-.feature {
+.features {
     display: flex;
 }
 
-.features h2 {
-    margin-top: 3em;
-
+.feature {
+    display: inline;
+    padding: 3em;
 }
+
+.feature-text {
+    inline-size: 20em;
+}
+.questions {
+    text-align: center;
+    margin-top: 10em;
+    margin-bottom: 6em;
+}
+
+.question {
+    inline-size: 25em;
+    display: inline-flex;
+    padding: 3em;
+    text-align: left;
+}
+
+.features img {
+    width: 60px;
+    height: 60px;
+}
+
 
 .learningMore {
     margin-top: 6em;
+}
+
+.vid {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+.block-content h1 {
+    text-align: center;
+    color: #fff;
+}
+
+.status {
+    text-align: left;
+    margin: 12em;
+}
+
+.intro {
+    text-align: left;
+    margin: 12em;
 }
 
 /* .navbar {
     display: inline;
 } */
 
-.checkbox input[type="checkbox"] {
-    display: none;
-}
+/* s */
 
 /* navbar on a big screen*/
 
-#hamnav {
+/* #hamnav {
     text-align: center;
     padding-top: 3em;
     margin-right: 1em;
@@ -74,10 +177,10 @@
     margin-top: 50px;
 }
 
-#hamitems a {
+#hamitems a { */
     /*flex-grow: 1;*/
     /*flex-basis: 0;*/
-    display: inline-block;
+    /* display: inline-block;
     padding-right: 3em;
     text-decoration: none;
     padding-left: 0;
@@ -94,9 +197,9 @@
 #hamnav label,
 #hamburger {
     display: none;
-}
+} */
 
-.btn {
+/* .btn {
     position: absolute;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
@@ -112,7 +215,7 @@
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     margin-bottom: 5em;
-}
+} */
 
 .intro img {
     border-radius: 50%;
@@ -122,81 +225,50 @@
 
 }
 
-.headshots {
+/* .headshots {
     flex-direction: column;
     padding: 3em;
     align-items: center;
-}
+} */
 
 .sponsors {
-    margin-top: 5em;
-    margin-bottom: 5em;
+   margin-top: 10em;
 }
 
-    /* styling contact form */
+/* sponsors photo aligning */
+.sponsors .intro .headshots {
+    display: flex;
+}
 
-    .contactForm {
-        background-color: #0F0238;
-        padding: 2em;
-        margin-left: 0em;
-        width: 82%;
-        display:inline-block;
-        text-align:center;
-    }
-
-    .contactForm textarea[type=text],
-select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+/* .sponsors .intro .photo {
     display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+
+} */
+
+.sponsors .photo h1 {
+    font-size: 20px;
+    text-align: center;
 }
 
-.contactForm input[type=email],
-select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+.copyright p {
     display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    margin-bottom: 1em;
 }
 
-    .contactForm button,
-    .contactForm[type=submit] {
-        width: 50%;
-        background-color: #B497D6;
-        /* color: white; */
-        padding: 0.8em 1.2em;
-        margin: 0.5em 0;
-        border: none;
-        border-radius: 0.2em;
-        cursor: pointer;
-    }
-    
-    .contactformbutton {
-        text-align: center;
-    }
-    
-    .contactforminput {
-        text-align: left;
-        padding: 2em;
-    }
-    
-    .contactforminput p {
-        text-align: center;
-        font-weight: 600;
-    }
-    
-    button[type=submit]:hover {
-        background-color: #0F0238;
-    }
+.copyright {
+    display: flex;
+}
+
+
+
+.footer {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 2em;
+}
+
  /* logo and team name at top left corner */
-    .team {
+    /* .team {
         display: flex;
         margin-top: 2em;
 
@@ -209,7 +281,7 @@ select {
     .logo {
         padding: 0.5em;
         width:4em;
-    }
+    } */
 
     .first-page {
         padding-bottom: 20em;

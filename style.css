@@ -1,11 +1,18 @@
  * {
     color: #0F0238;
     font-family: 'Quicksand', sans-serif;
+    padding: 0%;
+    margin: 0%;
 
  }
 
  p {
      font-size: 20px;
+     margin-top: 1.5em;
+ }
+
+ h3{
+     padding-bottom: 1em;
  }
 
 
@@ -48,25 +55,49 @@
 }
 
 .block-content {
-    background-color: black;
+    background-color: #4b2e83;
     color:#ffffff; 
-    padding-top: 4em;
-    padding-bottom: 5em;
+    padding-top: 6em;
+    padding-bottom: 6em;
     margin-top: 10em;
+	transform: skewY(4deg);
+}
+
+.block-content-vid {
+    background-color: #4b2e83;
+    color:#ffffff; 
+    padding-top: 6em;
+    padding-bottom: 6em;
+    margin-top: 10em;
+	transform: skewY(-4deg);
 }
 
 .block-content h2 {
     color:#ffffff; 
     text-align: left;
-    margin-left: 4em;
+    margin-left: 3em;
+    padding-bottom: 1em;
+    transform: skewY(-4deg);
+}
+
+.block-content-vid h1 {
+    color:#ffffff; 
+    text-align: center;
+    padding-bottom: 2em;
+    transform: skewY(4deg);
+}
+
+.block-content-vid .vid {
+    transform: skewY(4deg);
 }
 
 .block-content p {
     color:#ffffff; 
     text-align: left;
     padding-left: 8em;
-    padding-bottom: 3em;
+    padding-bottom: 5em;
     padding-right: 20em;
+    transform: skewY(-4deg);
 }
 
 
@@ -158,11 +189,16 @@
 .status {
     text-align: left;
     margin-top: 6em;
+    margin-left: 13em;
+    margin-right: 10em;
+    margin-bottom: 10em;
+
 }
 
-.intro {
+.intro, .status {
     text-align: left;
     margin: 12em;
+
 }
 
 /* .navbar {
@@ -261,12 +297,11 @@
 }
 
 .copyright p {
-    display: inline-block;
-    margin-bottom: 1em;
-}
-
-.copyright {
-    display: flex;
+    color: #fff;
+    font-size: 24px;
+    bottom: 10px;
+    right: 20px;
+    display: flex-end;
 }
 
 
@@ -275,18 +310,27 @@
     bottom: 0;
     margin-top: 5em;
     width: 100%;
-    height: 2.5rem;   
+    padding-top: 4em;
+    padding-bottom: 1em;
+    height: 2.5rem;
+    background-color: #4b2e83;   
+    display: flex;
+    align-items: flex-end;
     
 }
 
-.footer .copyright {
-    text-align: left;
-    margin-left: 0;
+ .informers {
+    text-align: right;
+    margin-bottom: 0;
+    padding: 0%;
+    color:#ffffff;
 }
 
-.footer img {
-    width: 10em;
+.footer .infologo {
+    width: 2em;
+    padding-left: 2em;
 }
+
 
  /* logo and team name at top left corner */
     /* .team {

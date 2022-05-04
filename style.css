@@ -17,11 +17,16 @@
 
 
 .heading {
-    margin-top: 5em;
-    font-size: 16px;
-    text-emphasis: left;
-    padding-left: 2em;
-    padding-right: 65%;
+    margin-top: 8em;
+    font-size: 20px;
+    text-align: center;
+    padding: 30%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.heading h1 {
+    font-weight: 4;
 }
 
 .front-img .team {
@@ -31,12 +36,16 @@
 .front-img {
     display: flex;
     margin-left: 15em;
-    margin-top: 10em;
+    margin-top: 6em;
     margin-bottom: 15em;
 }
 
 .front-img .team .logo {
     width: 20em;
+}
+
+.downarrow {
+    align-items: center;
 }
 
 .team .plus {
@@ -59,7 +68,7 @@
     color:#ffffff; 
     padding-top: 6em;
     padding-bottom: 6em;
-    margin-top: 10em;
+    margin-top: 7em;
 	transform: skewY(4deg);
 }
 
@@ -102,17 +111,17 @@
 
 
 
-.mission {
-    margin-top: 6em;
+.mission, .cip-intro {
+    margin-top: 5em;
     margin-right: 1em;
     margin-left: 1em;
-    margin-bottom: 0em;
+    margin-bottom: 2em;
     padding-bottom: 0;
 }
 
 .mission p, .mission h2 {
     text-align: left;
-
+    padding-bottom: 1em;
 }
 
 .solution {
@@ -139,6 +148,7 @@
 .features {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 4em;
 
 }
 

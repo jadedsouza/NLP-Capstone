@@ -29,24 +29,27 @@
     font-weight: 4;
 }
 
-.front-img .team {
-    display: inline-block;
-}
 
 .front-img {
     display: flex;
-    margin-left: 15em;
-    margin-top: 6em;
-    margin-bottom: 15em;
+    justify-content: center;
+    margin-top: 1em;
 }
 
 .front-img .team .logo {
     width: 20em;
 }
+ 
+.downarrow img{
+    justify-content: center;
+    width:200px;
+}
 
 .downarrow {
-    align-items: center;
+    display: flex;
+    justify-content: center;
 }
+
 
 .team .plus {
     width: 7em;
@@ -84,7 +87,7 @@
 .block-content h2 {
     color:#ffffff; 
     text-align: left;
-    margin-left: 3em;
+    margin-left: 6em;
     padding-bottom: 1em;
     transform: skewY(-4deg);
 }
@@ -103,9 +106,10 @@
 .block-content p {
     color:#ffffff; 
     text-align: left;
-    padding-left: 8em;
+    padding-left: 4em;
     padding-bottom: 5em;
     padding-right: 20em;
+    margin-left: 5em;
     transform: skewY(-4deg);
 }
 
@@ -141,7 +145,7 @@
 .questions h2 {
     text-align: left;
     margin-bottom: 1em;
-    margin-left: 4em;
+    margin-left: 6em;
 }
 
 
@@ -309,9 +313,11 @@
 .copyright p {
     color: #fff;
     font-size: 24px;
-    bottom: 10px;
-    right: 20px;
-    display: flex-end;
+    bottom: 1em;
+}
+
+.copyright {
+    text-align: left;
 }
 
 
@@ -336,9 +342,13 @@
     color:#ffffff;
 }
 
-.footer .infologo {
-    width: 2em;
+.infologo img {
+    width: 17em;
     padding-left: 2em;
+}
+
+.infologo {
+    float: right;
 }
 
 
@@ -431,6 +441,18 @@
 
     .photo {
         margin:3em;
+        padding-left: 3em;
+        text-align: center;
+    }
+
+    .photo .linkedin {
+        width: 30px;
+        border-radius: 0%;
+
+    }
+
+    .contacts {
+        display: inline-block;
     }
 
 

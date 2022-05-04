@@ -318,6 +318,8 @@
 
 .copyright {
     text-align: left;
+    padding-right: 2em;
+    color: rgb(181, 181, 181) ;
 }
 
 
@@ -332,6 +334,7 @@
     background-color: #4b2e83;   
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
     
 }
 
@@ -422,6 +425,26 @@
         margin: 1em;
     }
 
+    .intro .contacts img {
+        border-radius: 0%;
+        width: 2.3em;
+        height: 2.3em;
+        align-items: baseline;
+
+    }
+
+    .contacts .email img {
+        border-radius: 0%;
+        width: 2.65em;
+        height: 2.65em;
+
+    }
+
+    .contacts .linkedin img {
+        margin-top: 1.15em;
+
+    }
+
     .headshots {
         flex-direction: row;
         padding: 0;
@@ -452,7 +475,9 @@
     }
 
     .contacts {
-        display: inline-block;
+        display: flex;
+        justify-content:space-evenly;
+
     }
 
 

@@ -15,6 +15,7 @@
      padding-bottom: 1em;
  }
 
+ /* Top header with logo and nav bar */
  .header {
         margin-top: 0;
         width: 100%;
@@ -27,20 +28,8 @@
         justify-content: space-between;
  }
 
- .informers-header p {
-     color:#fff;
-     align-items: flex-start;
-     font-size: 15px;
-     margin-right: 5em;
- }
 
-.informers-header {
-    font-weight: bold;
-    padding-left: 2em;
-    /* padding-top: 1em; */
-    /* background-color: #000000; */
-} 
-
+/* nav bar in header */
  .nav-elem {
      text-align: left;
      font-weight: bold;
@@ -54,47 +43,72 @@
     padding-top: 1em;
 }
 
+#hamitems {
+    float: right;
+    color: #ffffff;
+    margin-top: 50px;
+}
 
+#hamitems a {
+    /*flex-grow: 1;*/
+    /*flex-basis: 0;*/
+    display: inline-block;
+    padding-right: 3em;
+    color: #ffffff;
+    text-decoration: none;
+    padding-left: 0;
+}
+
+#hamitems a:hover {
+    color: #B497D6;
+}
+
+#hamitems a:active {
+    text-decoration: underline;
+    color: #B497D6;
+}
+
+#hamnav label,
+#hamburger {
+    display: none;
+} 
+
+
+/* positioning content on top page of landing page ****FIXXXX**** */
+.cover-content {
+    justify-content: center;
+    margin-left: 10em;
+}
+
+
+
+/* logo in header */
  .header-logo img {
      width: 4em;
  }
 
- 
-
-
-.heading {
-    margin-top: 4em;
-    margin-bottom: 1em;
-    padding-top: 0;
-    padding-bottom: 0;
-
+/* project title and description on top of homepage  */
+  .informers-header p {
+    color:#fff;
+    align-items: flex-start;
+    font-size: 15px;
+    margin-right: 5em;
 }
 
-.heading h1 {
-    font-weight: bold;
-    font-style: italic;
-    padding-left: 14%;
-    padding-right:57%;
-    font-size: 35px;
+.informers-header {
+   font-weight: bold;
+   padding-left: 2em;
+   /* padding-top: 1em; */
+   /* background-color: #000000; */
+} 
 
-}
-
-.heading p {
-    margin-left: 13em;
-    padding-right:60%;
-    font-size: 16px;
-}
-
-.cover {
- padding-left: 0;
-}
-
-
+/* informers and cip logo - top and center of landing page */
 .front-img {
     display: flex;
     justify-content: center;
     margin-top: 0;
     margin-bottom: 0;
+    width: 5em;
     /* padding-left: 5em; */
 }
 
@@ -102,31 +116,7 @@
     width: 20em;
 }
  
-.downarrow img{
-    width:180px;
-}
-
-.downarrow {
-    display: flex;
-    justify-content: center;
-}
-
-
-.team .plus {
-    width: 7em;
-    margin-top: 8em;
-}
-
-.team .logo {
-    width: 10em;
-}
-
-.team .logo2 {
-    width: 20em;
-    margin-top: 6em;
-    margin-left: 3em;
-}
-
+/* purple background element of website with project info and sponsors */
 .block-content {
     background-color: #4b2e83;
     color:#ffffff; 
@@ -135,7 +125,7 @@
     margin-top: 7em;
 	transform: skewY(-4deg);
 }
-
+/* demo vido purple backgoeudn element */
 .block-content-vid {
     background-color: #4b2e83;
     color:#ffffff; 
@@ -144,6 +134,8 @@
     margin-top: 10em;
 	transform: skewY(4deg);
 }
+
+/* content within purple background areas */
 
 .block-content h2 {
     color:#ffffff; 
@@ -174,8 +166,13 @@
     transform: skewY(4deg);
 }
 
+.block-content h1 {
+    text-align: center;
+    color: #fff;
+}
 
 
+/* project info and sponsors content on homepage */
 .mission, .cip-intro {
     margin-top: 5em;
     margin-right: 1em;
@@ -189,6 +186,7 @@
     padding-bottom: 1em;
 }
 
+/* our solution section on landing page  */
 .solution {
     text-align: center;
     margin-top: 10em;
@@ -197,19 +195,14 @@
     padding-right: 12em;
 }
 
-
+/* features intro */
  .feature-title  {
     margin-left: 5em;
 }
 
 
-.questions h2 {
-    text-align: left;
-    margin-bottom: 1em;
-    margin-left: 6em;
-}
 
-
+/* aligning features sections on page */
 .features {
     display: flex;
     flex-wrap: wrap;
@@ -222,17 +215,32 @@
     padding: 2em;
 }
 
+.features img {
+    width: 60px;
+    height: 60px;
+}
 
 .feature-text {
     inline-size: 20em;
     
 }
+
+
+/* heading for feature questions section */
+.questions h2 {
+    text-align: left;
+    margin-bottom: 1em;
+    margin-left: 6em;
+}
+
+/* aligning feeature questions section */
 .questions {
     text-align: center;
     margin-top: 8em;
     margin-bottom: 6em;
 }
 
+/* aligning feature 'question' placements */
 .question {
     inline-size: 25em;
     display: inline-flex;
@@ -240,117 +248,31 @@
     text-align: left;
 }
 
-.features img {
-    width: 60px;
-    height: 60px;
-}
-
-
-.learningMore {
-    margin-top: 6em;
-}
-
+/* alignning video placement on screen */
 .vid {
     display: flex;
     justify-content: center;
     padding-bottom: 2em;
 }
 
-.block-content h1 {
-    text-align: center;
-    color: #fff;
-}
 
+/* project status alignment */
 .status {
     text-align: left;
     margin-top: 6em;
     margin-left: 13em;
     margin-right: 10em;
     margin-bottom: 10em;
-
 }
 
-.intro, .status {
-    text-align: left;
-    margin: 12em;
-
-}
-/* 
-.arrow-right {
-    width: 0; 
-    height: 0; 
-    border-top: 24.5em solid transparent;
-    border-bottom: 24.5em solid transparent;
-    border-left: 15em solid #4b2e83;
-  }
-   */
+/* changing color of link in sponsor paragraph */
   .cip-intro a {
       color: #e8e3d3;
   }
 
-/* .navbar {
-    display: inline;
-} */
 
-/* s */
-
-/* navbar on a big screen*/
-
-/* #hamnav {
-    text-align: center;
-    padding-top: 3em;
-    margin-right: 1em;
-    margin-top: 1em;
-    align-items: center;
-}
-
-
-#hamitems {
-    float: right;
-    margin-top: 50px;
-}
-
-#hamitems a { */
-    /*flex-grow: 1;*/
-    /*flex-basis: 0;*/
-    /* display: inline-block;
-    padding-right: 3em;
-    text-decoration: none;
-    padding-left: 0;
-}
-
-#hamitems a:hover {
-    color: #B497D6;
-}
-
-#hamitems a:active {
-    text-decoration: underline;
-    color: #B497D6;
-}
-#hamnav label,
-#hamburger {
-    display: none;
-} */
-
-/* .btn {
-    position: absolute;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    background-color: #B497D6;
-    color: white;
-    border-radius: 0.5em;
-    width: 10em;
-    margin-top: 1em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    margin-bottom: 5em;
-} */
-
-.intro img {
+/* styling all images in team section - including icons ***FIXX*** */
+.intro .headshots img {
     border-radius: 50%;
     width: 15em;
     height:15em;
@@ -358,46 +280,7 @@
 
 }
 
-/* .headshots {
-    flex-direction: column;
-    padding: 3em;
-    align-items: center;
-} */
-
-.sponsors {
-   margin-top: 10em;
-}
-
-/* sponsors photo aligning */
-.sponsors .intro .headshots {
-    display: flex;
-}
-
-/* .sponsors .intro .photo {
-    display: inline-block;
-
-} */
-
-.sponsors .photo h1 {
-    font-size: 20px;
-    text-align: center;
-}
-
-.copyright p {
-    color: #fff;
-    font-size: 22px;
-    bottom: 1em;
-    font-style: italic;
-}
-
-.copyright {
-    text-align: left;
-    padding-right: 2em;
-    color: rgb(181, 181, 181) ;
-}
-
-
-
+/* positioning footer aat bottom of site page */
 .footer {
     bottom: 0;
     margin-top: 2em;
@@ -412,13 +295,8 @@
     
 }
 
- .informers {
-    text-align: right;
-    margin-bottom: 1em;
-    padding: 0%;
-    color:#ffffff;
-}
 
+/* position ischool logo in footer */
 .infologo img {
     width: 17em;
     padding-left: 2em;
@@ -428,62 +306,33 @@
     float: right;
 }
 
-
-.first-page {
-    display: flex;
+/* adjusting copyright placement */
+.copyright p {
+    color: #fff;
+    font-size: 22px;
+    bottom: 1em;
+    font-style: italic;
 }
 
-.cover-content {
-    justify-content: center;
-    margin-left: -10em;
+.copyright {
+    text-align: left;
+    padding-right: 2em;
+    color: rgb(181, 181, 181) ;
 }
-
-
- /* logo and team name at top left corner */
-    /* .team {
-        display: flex;
-        margin-top: 2em;
-
-    }
-
-    .team-name {
-        margin-top: 1.5em;
-    }
-
-    .logo {
-        padding: 0.5em;
-        width:4em;
-    } */
-/* 
-    .first-page {
-        padding-bottom: 20em;
-        padding-left: 2em;
-        padding-right: 65%;
-        padding-top: 0em;
-        margin-top:0em;
-        text-emphasis: left;
-        color:#0F0238; 
-    } */
-    /* .copyright {
-        text-align: left;
-    } */
 
 
 @media screen and (max-width: 768px) {
-    .navbar {
-        margin-top: 0.5em;
-    }
-    /* vertical menu */
-    #hamitems a {
+     /* vertical navbar for small screens */
+     #hamitems a {
         box-sizing: border-box;
         display: block;
         width: 100%;
         border-top: 0.1em solid;
     }
-    /* show ham icon */
+    /* show ham icon - navbar*/
     #hamnav label {
         display: block;
-        color: #B497D6;
+        color: #2d30e1;
         font-style: normal;
         font-size: 1.2em;
         padding-right: .75em;
@@ -501,7 +350,7 @@
 
 
 @media screen and (min-width:750px) {
-
+    /* adjusting headshot images on larger screens */
     .intro img {
         border-radius: 50%;
         width: 10em;
@@ -509,6 +358,7 @@
         margin: 1em;
     }
 
+    /* adjusting contact logos on larger screen */
     .intro .contacts img {
         border-radius: 0%;
         width: 2.3em;
@@ -529,15 +379,17 @@
 
     }
 
+    /* adjusting size for logos on top og landing page */
+    .front-img img {
+        width: 10em;
+    }
+
+/* team's pictures alignment for larger screens */
+
     .headshots {
         flex-direction: row;
         padding: 0;
         
-    }
-
-    .features {
-        margin-left: 3em;
-        align-items: center;
     }
 
     .headshots {
@@ -552,8 +404,9 @@
         text-align: center;
     }
 
+    /* adjusting linkedin and email for larger screens*/
     .photo .linkedin {
-        width: 25px;
+        width: 2em;
         border-radius: 0%;
 
     }
@@ -564,13 +417,21 @@
 
     }
 
+    /* adjusting alignment of features on larger screens */
+    .features {
+        margin-left: 3em;
+        align-items: center;
+    }
+
 
 }
 
 
 
 @media screen and (min-width:900px) {
-    
+
+    /* adjusting headshots sizing on larger pages */
+
     .headshots {
         display: row;
     }
@@ -583,7 +444,7 @@
         margin: 0.5em;
     }
 
-    .img {
+    .headshots .img {
         width: 60px;
         height: 60px;
     }

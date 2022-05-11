@@ -30,55 +30,25 @@
  }
 
 
-/* nav bar in header */
- .nav-elem {
-     text-align: left;
-     font-weight: bold;
- }
+/* nav bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 
- .nav-elem p {
-    color: #fff;
-    font-size: 14px;
+ul li {
     display: inline-block;
     padding-right: 2em;
     padding-top: 1em;
+    text-align: left;
+    font-weight: bold;
 }
 
-/* .hamitems  {
-    float: right;
-    color: #ffffff;
-    margin-top: 50px;
+li p {
+    color: #fff;
+    font-size: 14px;
 }
-
-.hamitems a {
-    /*flex-grow: 1;*/
-    /*flex-basis: 0;*/
-    /* display: inline-block;
-    padding-right: 3em;
-    color: #ffffff;
-    text-decoration: none;
-    padding-left: 0;
-}
-
-#hamitems a:hover {
-    color: #B497D6;
-}
-
-#hamitems a:active {
-    text-decoration: underline;
-    color: #B497D6;
-}
-
-#hamnav label,
-#hamburger {
-    display: none;
-} 
-
-
-#hamnav label,
-#hamburger {
-    display: none;
-} */ 
 
 /* positioning content on top page of landing page ****FIXXXX**** */
 .cover-content {

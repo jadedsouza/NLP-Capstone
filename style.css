@@ -29,6 +29,16 @@
         justify-content: space-between;
  }
 
+ /* making sticky header */
+ .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
 
 /* nav bar */
 ul {
@@ -66,6 +76,8 @@ li p {
 /* logo in header */
  .header-logo img {
      width: 4em;
+     margin-right: 1em;
+     margin-top: 1em;
  }
 
 /* project title and description on top of homepage  */
@@ -400,33 +412,16 @@ li p {
 
 @media screen and (max-width: 768px) {
      /* vertical navbar for small screens */
-     /* .navbar {
-        margin-top: 0.5em;
-    } */
-    /* vertical menu */
-    /* .hamitems a {
-        box-sizing: border-box;
+     
+     ul {
+        list-style-type: none;
+        padding: 0;
+        width: 60px;
+      }
+      
+      li a {
         display: block;
-        width: 100%;
-        color: #ffffff;
-        border-top: 0.1em solid;
-    } */
-    /* show ham icon */
-    /* #hamnav label {
-        display: block;
-        color: #2d30e1;
-        font-style: normal;
-        font-size: 1.2em;
-        padding-right: .75em;
-        float: right;
-    } */
-    /* show/hide menu */
-    /* #hamitems {
-        display: none;
-    }
-    #hamnav input:checked~#hamitems {
-        display: block;
-    } */
+      }
 
     /* alinging headshots and contact info */
     .intro h2 {
@@ -523,7 +518,7 @@ li p {
     }
     
     .questions h2 {
-        margin-top: 6em;
+        margin-top: 5em;
         margin-left: 5em;
         margin-bottom: 0;
     }

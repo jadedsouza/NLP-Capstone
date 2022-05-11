@@ -22,23 +22,23 @@
         padding-top: 1em;
         padding-bottom: 1em;
         height: 1.5rem;
-        /* position: fixed; */
-        background-color: #4b2e83;   
+        background-color: #000;   
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
  }
 
+ 
  /* making sticky header */
- .sticky {
+ /* .sticky {
     position: fixed;
     top: 0;
     width: 100%
   }
   
-  .sticky + .content {
+  .sticky + .landing-content {
     padding-top: 102px;
-  }
+  } */
 
 /* nav bar */
 ul {
@@ -75,25 +75,35 @@ li p {
 
 /* logo in header */
  .header-logo img {
-     width: 4em;
+     width: 3em;
      margin-right: 1em;
-     margin-top: 1em;
+     padding-top: 0.5em;
+     padding-bottom: 0.5em;
  }
 
 /* project title and description on top of homepage  */
   .informers-header p {
     color:#fff;
-    align-items: flex-start;
     font-size: 15px;
-    margin-right: 5em;
+    font-weight: bold;
+    padding-top: 0.3em;
+    padding-bottom: 1em;
 }
 
-.informers-header {
-   font-weight: bold;
-   padding-left: 2em;
-   /* padding-top: 1em; */
-   /* background-color: #000000; */
+.info-header-block {
+   /* position:static; */
+   display: flex;
+   align-items: flex-start;
+   padding-left: 3em;
+   padding-right: 2em;
+   padding-top: 1em; 
+   padding-bottom: 2em;
+   height: 1em;
+   margin-top: 2em;
 } 
+
+
+
 
 /* informers and cip logo - top and center of landing page */
 .front-img img {

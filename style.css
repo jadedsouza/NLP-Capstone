@@ -32,7 +32,7 @@
  }
 
   .sticky + .landing-content {
-    padding-top: 102px;
+    padding-top: 120px;
   } 
 
 /* nav bar */
@@ -57,14 +57,21 @@ li p {
 
 
 .heading {
-    margin-top: 5em;
+    margin-top: 6em;
+    margin-left:2em;
     font-style: italic;
     color: #252525;
+    font-size: 20px;
+}
+
+.heading h1 {
+    font-size: 40px;
 }
 
 .heading p {
     font-size: 16px;
 }
+
 
 /* logo in header */
  .header-logo img {
@@ -82,9 +89,10 @@ li p {
     background-color: #4b2e83;
     color: white;
     font-weight: bold;
-    border-radius: 14%;
+    border-radius: 0.8em;
     width: 10em;
-    margin-top: 3em;
+    margin-top:4em;
+    margin-left: 3em;
     padding-top:1em;
     padding-bottom: 1em;
 }
@@ -439,7 +447,9 @@ li p {
     color: rgb(181, 181, 181) ;
 }
 
-
+.status a {
+    color: blue;
+}
 @media screen and (max-width: 768px) {
      /* vertical navbar for small screens */
      
@@ -468,8 +478,8 @@ li p {
     }
 
     .landing-img .border {
-        width: 32em;
-        height: 20em;
+        width: 42em;
+        height: auto;
         background-color: #cccccc;
         border-radius: 10%;
         margin-top: 13em;
@@ -627,9 +637,9 @@ li p {
         padding: 1em;
     }
 
-    /* .contacts .email {
+    .contacts .email {
         margin-top: 1.5em;
-    } */
+    }
 
     .contacts .linkedin img {
         border-radius: 0%;
@@ -650,6 +660,7 @@ li p {
         flex-direction: row;
         padding: 0;
         padding-left: 1em;
+        margin-bottom: 0;
         
     }
 
@@ -702,6 +713,10 @@ li p {
 
     .solution  {
         margin-top: 3em;
+    }
+    
+    .status {
+        margin-top: 0;
     }
 
     /* positioning footer aat bottom of site page */
@@ -759,17 +774,20 @@ li p {
     padding-top: 2em;
     padding-bottom: 1em;
     margin-bottom: 5em;
+    width: 30em;
 }
 
 .landing-img img {
-    margin-top: 10em;
+    margin-top: 5em;
     margin-bottom: 15em;
-    width:30em;
+    margin-left: 2em;
+    margin-right:6.5em;
+    width:34em;
     height: auto;
-    border-radius: 10%;
+    border-radius: 0.9em;
     border: 20px solid #cccccc;
-
 }
+
 
 
     /* adjusting headshots sizing on larger pages */
@@ -790,6 +808,10 @@ li p {
         width: 60px;
         height: 60px;
     }
+
+    .feature #sentiment {
+        margin-top: 1em;
+    }
 }
 
 
@@ -797,7 +819,7 @@ li p {
 @media screen and (min-width:1200px) {
     
 .landing-img .border {
-    width: 32em;
+    width: 30em;
     height: 20em;
 }
 

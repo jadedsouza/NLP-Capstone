@@ -77,12 +77,14 @@ li p {
     align-items: center;
     background-color: #4b2e83;
     color: white;
-    border-radius: 13%;
+    font-weight: bold;
+    border-radius: 10%;
     width: 10em;
     margin-top: 3em;
     padding-top:1em;
     padding-bottom: 1em;
 }
+
 
 /* project title and description on top of homepage  */
   .informers-header p {
@@ -290,10 +292,10 @@ li p {
 /* project status alignment */
 .status {
     text-align: left;
-    margin-top: 6em;
+    margin-top: 2em;
     margin-left: 13em;
     margin-right: 10em;
-    margin-bottom: 10em;
+    margin-bottom: 6em;
 }
 
 /* changing color of link in sponsor paragraph */
@@ -371,6 +373,7 @@ li p {
     display:flex; 
     flex-wrap: wrap;
     align-content: center;
+    margin-left: 5%;
 }
 
 .photo {
@@ -497,25 +500,31 @@ li p {
         width: 4.5em;
         height: 4.5em;
         border-radius: 0%;
+        margin-left: 1em;
     }
 
     .intro .contacts {
         display: flex;
-        justify-content: space-between;
+        flex-direction: row;
         margin-left: 1em;
         margin-right: 1em;
         align-items: baseline;
     }
 
     /* fixing margin on 'with tools liek these..' for small screens */
-    .questions h2 {
-        margin-left: 2em;
-    }
 
-
-    .question p {
+    .questions {
+        justify-content: center;
+        margin-left: 3em;
         margin-right: 3em;
+        margin-top: 2em;
     }
+
+    .questions h2 {
+        margin: 0;
+        text-align: center;
+    }
+
     /* project staus alignment */
     .status {
         margin-left: 3em;
@@ -663,7 +672,7 @@ li p {
 
     /* adjusting alignment of features on larger screens */
     .features {
-        align-items: center;
+        justify-content: center;
     }
 
     .feature {
@@ -780,7 +789,7 @@ li p {
 }
 
 .headshots {
-    margin-left: 6em;
+    margin-left: 2%;
 }
 
 }

@@ -26,23 +26,23 @@
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
-        position: sticky; 
-        top: 0;
+        /* position: sticky; 
+        top: 0; */
 
  }
 
-  .sticky + .landing-content {
+  /* .sticky + .landing-content {
     padding-top: 120px;
-  } 
+  }  */
 
 /* nav bar */
-ul {
+ .header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
 
-ul li {
+ .header ul li {
     display: inline-block;
     padding-right: 2em;
     padding-top: 1em;
@@ -53,6 +53,11 @@ ul li {
 li p {
     color: #fff;
     font-size: 14px;
+}
+
+.questions li {
+    list-style-type: circle;
+
 }
 
 
@@ -129,18 +134,15 @@ li p {
 
 
 /* informers and cip logo - top and center of landing page */
-.front-img img {
+/* .front-img img {
     display: flex;
     justify-content: wrap;
     margin-top: 0;
-    margin-bottom: 0;
-    width: 5em;
-    /* padding-left: 5em; */
+    margin-bottom: 0; */
+    /* padding-left: 5em;
 }
+ */
 
-.front-img .team .logo {
-    width: 20em;
-}
  
 /* purple background element of website with project info and sponsors */
 .block-content {
@@ -273,17 +275,20 @@ li p {
 }
 
 /* aligning feeature questions section */
-.questions ol {
+.questions ul {
     text-align: center;
     margin-top: 3em;
     margin-bottom: 1em;
+}
+
+.questions ul li {
+    list-style-type: circle;
 }
 
 /* aligning feature 'question' placements */
 .question {
     inline-size: 25em;
     display: inline-flex;
-    padding-left: 3em;
     padding-right: 3em;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -368,10 +373,7 @@ li p {
     height: 2.3em;
 }
 
-/* adjusting size for logos on top og landing page */
-.front-img img {
-    width: 10em;
-}
+
 
 /* team's pictures alignment for larger screens */
 
@@ -453,41 +455,50 @@ li p {
 @media screen and (max-width: 768px) {
      /* vertical navbar for small screens */
      
-     ul {
+     .header ul {
         list-style-type: none;
         padding: 0;
         width: 60px;
       }
       
-      li a {
+      .header li a {
         display: block;
       }
 
       .cover-content {
           display: flex;
           flex-direction: column;
-          margin-left: 5em;
-          margin-right: 3em;
           margin-bottom: 10em;
 
       }
 
+      .question {
+          margin-left: 2em;
+      }
+
+
     .heading {
-        width: 30em;        
-        padding-right: 5em;
+        width: 80%; 
+        margin-left: 1em; 
+        margin-right: 0;      
     }
 
-    .landing-img .border {
-        width: 42em;
-        height: auto;
-        background-color: #cccccc;
-        border-radius: 10%;
-        margin-top: 13em;
-        margin-left: 0;
+    .heading h1 {
+        font-size: 30px;
+    }
+
+    .landing-img img {
+        width: 20em;
+        margin: 0;
+        padding: 0;
+        margin-top: 4em;
+        border-radius: 0.9em;
+        border: 10px solid #cccccc;
     }
 
     .landing-img {
-        width: 10em;
+        display: flex;
+        justify-content: center;
     }
 
     /* alinging headshots and contact info */
@@ -533,14 +544,19 @@ li p {
 
     .questions {
         justify-content: center;
-        margin-left: 3em;
-        margin-right: 3em;
+        margin-left: 1em;
+        margin-right: 1em;
         margin-top: 2em;
     }
 
     .questions h2 {
         margin: 0;
         text-align: center;
+    }
+
+    .question {
+        width: 20em;
+
     }
 
     /* project staus alignment */
@@ -577,6 +593,23 @@ li p {
 
 @media screen and (min-width:750px) {
 
+    .heading {
+        margin-right: 3em;
+    }
+
+    .landing-img img {
+        width: 30em;
+        margin: 0;
+        padding: 0;
+        margin-top: 4em;
+        border-radius: 0.9em;
+        border: 10px solid #cccccc;
+    }
+
+    .landing-img {
+        display: flex;
+        justify-content: center;
+    }
 
     .block-content {
         padding-right: 20em;
@@ -764,8 +797,12 @@ li p {
 
 
 .heading {
-    width: 30em;        
+    width: 15em;        
     padding-right: 5em;
+}
+
+.heading  h1 {
+    font-size: 30px;
 }
 
 .border {
@@ -774,21 +811,18 @@ li p {
     padding-top: 2em;
     padding-bottom: 1em;
     margin-bottom: 5em;
+    margin-right: 4em;
     width: 30em;
 }
 
-.landing-img img {
-    margin-top: 5em;
-    margin-bottom: 15em;
-    margin-left: 2em;
-    margin-right:6.5em;
-    width:34em;
-    height: auto;
-    border-radius: 0.9em;
-    border: 20px solid #cccccc;
-}
 
 
+
+/* 
+.landing-img {
+    display: flex;
+    justify-content: center;
+} */
 
     /* adjusting headshots sizing on larger pages */
 
@@ -812,6 +846,12 @@ li p {
     .feature #sentiment {
         margin-top: 1em;
     }
+
+/* top img on landing size */
+    .landing-img .border {
+        width: 20em;
+        height: 10em;
+    }
 }
 
 
@@ -821,6 +861,16 @@ li p {
 .landing-img .border {
     width: 30em;
     height: 20em;
+}
+.landing-img img {
+    margin-top: 5em;
+    margin-bottom: 15em;
+    margin-left: 2em;
+    margin-right:6.5em;
+    width:30em;
+    height: auto;
+    border-radius: 0.8em;
+    border: 20px solid #cccccc;
 }
 
 .headshots {

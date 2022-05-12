@@ -55,9 +55,9 @@ li p {
     font-size: 14px;
 }
 
-.questions li {
+.query ul {
     list-style-type: circle;
-
+    margin-left: 1em;
 }
 
 
@@ -718,8 +718,12 @@ li p {
 
     .contacts {
         display: flex;
-        justify-content:space-evenly;
+        justify-content:center;
 
+    }
+
+    .contacts .linkedin {
+        margin-right: 1em;
     }
 
     /* adjusting alignment of features on larger screens */
@@ -842,6 +846,11 @@ li p {
         width: 60px;
         height: 60px;
     }
+/* 
+    .headshots .contacts {
+        align-items: center;
+
+    } */
 
     .feature #sentiment {
         margin-top: 1em;
@@ -861,20 +870,28 @@ li p {
 .landing-img .border {
     width: 30em;
     height: 20em;
+    border-radius: 0.8em;
 }
 .landing-img img {
     margin-top: 5em;
     margin-bottom: 15em;
     margin-left: 2em;
     margin-right:6.5em;
+    padding: 0;
     width:30em;
     height: auto;
-    border-radius: 0.8em;
-    border: 20px solid #cccccc;
+    border-radius: 0.9em;
+    border: 10px solid #cccccc;
 }
 
 .headshots {
     margin-left: 2%;
 }
 
+.landing-img {
+    display: flex;
+    justify-content: flex-end;
 }
+}
+
+

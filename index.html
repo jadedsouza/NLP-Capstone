@@ -19,41 +19,49 @@
 
 <!-- <div class="first-page"> -->
     
-     
-    <div class="header" id="myHeader">
+        <div class="header" id="myHeader">
        
-       <div class="info-header-block">
-            <div class="header-logo">
-                <img class="logo" src="img/logos/logo.PNG" alt="the informers logo"/>
+            <div class="info-header-block">
+                    <div class="header-logo">
+                        <img class="logo" src="img/logos/logo.PNG" alt="the informers logo"/>
+                    </div>
+
+                    <div class="informers-header">
+                        <p>The Informers</p>
+                    </div>
             </div>
 
-            <div class="informers-header">
-                <p>The Informers</p>
-            </div>
+            <ul>
+                    <li> <a href="#project-info"> <p>PROJECT INFO</p> </a></li>
+                    <li> <a href="#solution"><p>OUR SOLUTION</p></a></li>
+                    <li><a href="#demo"><p>PRODUCT DEMO</p></a></li>
+                    <li><a href="#headshots"><p>TEAM</p></a></li>
+            </ul>
+            
         </div>
-
-       <ul>
-            <li> <a href="#project-info"> <p>PROJECT INFO</p> </a></li>
-             <li> <a href="#solution"><p>THE SOLUTION</p></a></li>
-            <li><a href="#demo"><p>DEMO</p></a></li>
-       </ul>
-
-          
-    </div>
-
+    
 <div class="landing-content">
 
     <div class="cover-content">
+        <div>
+            <div class="heading">
+            <h1>Natural Langauge Processing to Categorize Misinformation</h1>
+            <p>A tool to help track mis/disinformation and provide rapid response</p>
+            </div>
 
-        <div class="heading">
-        <h1>Natural Langauge Processing to Categorize Misinformation</h1>
-        <p>Tracking mis/disinformation & providing rapid response ahead of the 2022 midterm elections</p>
+            <div class="button">
+                <a href="#solution">
+                    <button class="btn">
+                        LEARN MORE
+                    </button>
+                </a>
+            </div>
         </div>
-
-
-        <!-- <div class="downarrow">
-            <img src="img/p-icons/v.png" alt="img of down arrow">
-        </div> -->
+        <div class="landing-img">
+            <button class="border">
+                <img/>
+            </button>
+        </div>
     </div>
     
 <!-- </div> -->
@@ -64,8 +72,7 @@
     <h2>Project Information</h2>
     <p>In recent years there has been an abundance of mis/disinformation around US elections. This has caused a number of issues from fake news to voter fraud and the capitol insurrection in 2021.</p>
 
-    <p>In an effort to understand how mis/disinformation starts and spreads, we’re working with the University of Washington’s Center for an Informed Public to improve the research process of qualitative researchers by creating a Python Jupyter Notebook that allows researchers to datamine datasets relevant to the US election. 
-    </p>
+    <p>In an effort to understand how mis/disinformation starts and spreads, we’re working with the University of Washington’s Center for an Informed Public to improve the research process of qualitative researchers by creating a Python Jupyter Notebook that allows researchers to gain insight from datasets relevant to the US election.</p>
 
     <p>With our project, we hope to track mis/disinformation and provide rapid response ahead of the 2022 midterm elections.</p>
 
@@ -85,7 +92,7 @@
 
 <div class="solution">
     <h2>Our Solution</h2>
-    <p>We developed a comprehensive Python Jupyter Notebook that includes features to assist qualitative researchers in their research process. These features are sentiment analysis, search, standardize timezones, count retweets, and filters (retweets, date, and time).</p>
+    <p>We developed a comprehensive Python Jupyter Notebook that includes features to assist qualitative researchers in their research process. These features are sentiment analysis, search, standardize timezones, popular tweets, and filters (retweets, date, and time).</p>
 </div>
 
 <!-- <div class="feature-title">
@@ -99,7 +106,7 @@
         <div class="logo">
         <img src="img/p-icons/analysis.png" alt="img of rect"> </div>
         <div class="feature-text">
-        <p>Output positive, negative, and neutral tweets related to keyword/phrase/hashtag. </p> </div>
+        <p>Find positive, negative and neutral tweets related to keyword/phrase/hashtag</p> </div>
     </div>
 
     <div class="feature">
@@ -107,7 +114,7 @@
         <div class="logo">
         <img src="img/p-icons/search.png" alt="img of rect"></div>
         <div class="feature-text">
-        <p>Search for similar tweets that contain certain terms and/or exclude terms. </p> </div>
+        <p>Find tweets related to a term and/or exclude term(s) using vectorization</p> </div>
     </div>
 
     <div class="feature">
@@ -115,7 +122,7 @@
         <div class="logo">
         <img src="img/p-icons/timezone.png" alt="img of rect"> </div>
         <div class="feature-text">
-        <p>Converting time zones in the dataset (e.g., GMT to PST). </p></div>
+        <p>Convert timezones in the dataset (e.g., GMT to PST)</p></div>
     </div>
 
     <div class="feature">
@@ -123,7 +130,7 @@
         <div class="logo">
         <img src="img/p-icons/filter.png" alt="img of rect"> </div>
         <div class="feature-text">
-        <p> Filter to find tweets by a specific date and time. </p> </div>
+        <p> Filter to find tweets by a specific date and time</p> </div>
     </div>
 
     <div class="feature">
@@ -131,7 +138,7 @@
         <div class="logo">
         <img src="img/p-icons/retweet.png" alt="img of rect"> </div>
         <div class="feature-text">
-        <p>Filter to find if a tweet was retweeted or not. </p> </div>
+        <p>Filter to find if a tweet was retweeted or not</p> </div>
     </div>
 
     <div class="feature">
@@ -139,24 +146,25 @@
         <div class="logo">
         <img src="img/p-icons/count.png" alt="img of rect"> </div>
         <div class="feature-text">
-        <p>Count the number of times a tweet was retweeted. </p> </div>
+        <p>Count the number of times a tweet was retweeted</p> </div>
     </div>
 
 </div>
 </section>
 
 <div class="questions">
-    <h2>With these tools you can ask questions like:</h2>
-    <div class="question"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,?</p></div>
-    <div class="question"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,?</p></div>
-    <div class="question"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,?</p></div>
-    <div class="question"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,?</p></div>
+    <h2>With these tools, you can perform queries like:</h2>
+        <div class="question"><p>Check tweets that were posted on January 6th, 2021 during the time of the Capital Insurrection in Georgia’s timezone</p></div>
+        <div class="question"><p>Look up which tweets similar to ‘fraud’ have been retweeted the most</p></div>
+        <div class="question"><p>Look at tweets with positive sentiment related to “President Trump”</p></div>
+        <div class="question"><p>Filter for all tweets mentioning “#stopthesteal” from election week
+        </p></div>
 </div>
 
 <section id = "demo"> 
 
 <div class="block-content-vid">
-    <h1>DEMO VIDEO</h1>
+    <h1>PRODUCT DEMO</h1>
       <!--demo video-->
       <div class="vid">
         <iframe width="640" height="430" autostart="false" src="https://www.youtube.com/embed/F-a8GrisDx8
@@ -167,7 +175,7 @@
 </section>
 
 
-<div class="intro">
+<div class="intro" id="headshots">
     <h2>The Team</h2>
     <div class="headshots">
 
@@ -240,7 +248,7 @@
 
 <div class="status">
     <h2>Project Status</h2>
-    <p>As of May 21st, 2022, the project has been transferred to the UW CIP for further development. For any questions, please contact Mike Caulfield at mica42@uw.edu. 
+    <p>As of May 21st, 2022, the project has been transferred to the UW CIP for further development. For any questions, please contact Mike Caulfield at <a href="mailto:mica42@uw.edu?">mica42@uw.edu</a>. 
     </p>
 </div>
 

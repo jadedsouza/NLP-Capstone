@@ -16,30 +16,24 @@
  }
 
  /* Top header with logo and nav bar****MAKE NAV BAR FIXED**** */ 
- .header {
+.header {
         margin-top: 0;
         width: 100%;
         padding-top: 1em;
         padding-bottom: 1em;
         height: 1.5rem;
-        background-color: #000;   
+        background-color: #252525;   
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
-        position: sticky; top: 0;
+        position: sticky; 
+        top: 0;
+
  }
 
- 
- /* making sticky header */
- /* .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-  }
-  
   .sticky + .landing-content {
     padding-top: 102px;
-  } */
+  } 
 
 /* nav bar */
 ul {
@@ -61,26 +55,34 @@ li p {
     font-size: 14px;
 }
 
-/* positioning content on top page of landing page ****FIXXXX**** */
-.cover-content {
-    justify-content: center;
-    margin-left: 5em;
-    margin-right: 3em;
-    margin-bottom: 27em;
-}
 
 .heading {
     margin-top: 5em;
     font-style: italic;
+    color: #252525;
 }
 
 /* logo in header */
  .header-logo img {
-     width: 3em;
-     margin-right: 1em;
-     padding-top: 0.5em;
+     width: 2.8em;
+     margin-right: 0.1em;
+     padding-top: 0.6em;
      padding-bottom: 0.5em;
  }
+
+/* styling and positioning learn more */
+.btn {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: #4b2e83;
+    color: white;
+    border-radius: 13%;
+    width: 10em;
+    margin-top: 3em;
+    padding-top:1em;
+    padding-bottom: 1em;
+}
 
 /* project title and description on top of homepage  */
   .informers-header p {
@@ -103,7 +105,13 @@ li p {
    margin-top: 2em;
 } 
 
-
+/* .landing-img .border {
+    width: 20em;
+    height: 15em;
+    background-color: #4b2e83;
+    border-radius: 20%;
+    margin-left: 10em;
+} */
 
 
 /* informers and cip logo - top and center of landing page */
@@ -125,7 +133,7 @@ li p {
     background-color: #4b2e83;
     color:#ffffff; 
     padding-top: 3em;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
     margin-top: 4em;
     margin-bottom: 1em;
 	transform: skewY(-4deg);
@@ -151,7 +159,8 @@ li p {
 }
 
 .block-content {
-    padding-top: 1em;
+    padding-top: 2em;
+    padding-bottom: 3em;
 }
 
 .block-content-vid h1 {
@@ -169,11 +178,16 @@ li p {
     color:#ffffff; 
     text-align: left;
     padding-left: 1em;
-    padding-bottom: 3em;
+    padding-bottom: 1em;
     padding-right: 2em;
     margin-left: 2em;
     transform: skewY(4deg);
 }
+
+.block-content p {
+    padding-bottom: 0;
+}
+
 
 .block-content h1 {
     text-align: center;
@@ -183,12 +197,11 @@ li p {
 
 /* project info and sponsors content on homepage */
 .mission, .cip-intro {
-    margin-top: 5em;
+    margin-top: 3em;
     margin-right: 1em;
     margin-left: 1em;
-    margin-bottom: 2em;
-    padding-bottom: 0;
 }
+
 
 .mission p, .mission h2 {
     text-align: left;
@@ -199,7 +212,7 @@ li p {
 .solution {
     text-align: center;
     margin-top: 5em;
-    margin-bottom: 5em;
+    margin-bottom: 3em;
     padding-left: 4em;
     padding-right: 4em;
 }
@@ -215,15 +228,14 @@ li p {
 .features {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 4em;
-
+    padding-left: 7em;
 }
 
 .feature {
     display: inline;
     padding-top: 2em;
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .features img {
@@ -247,7 +259,7 @@ li p {
 }
 
 /* aligning feeature questions section */
-.questions {
+.questions ol {
     text-align: center;
     margin-top: 3em;
     margin-bottom: 1em;
@@ -389,7 +401,7 @@ li p {
     padding-top: 2em;
     padding-bottom: 1em;
     height: 2.5rem;
-    background-color: #4b2e83;   
+    background-color: #252525;   
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -433,6 +445,29 @@ li p {
       li a {
         display: block;
       }
+
+      .cover-content {
+          display: flex;
+          flex-direction: column;
+          margin-left: 5em;
+          margin-right: 3em;
+          margin-bottom: 10em;
+
+      }
+
+    .heading {
+        width: 30em;        
+        padding-right: 5em;
+    }
+
+    .landing-img .border {
+        width: 32em;
+        height: 20em;
+        background-color: #4b2e83;
+        border-radius: 10%;
+        margin-top: 13em;
+        margin-left: 0;
+    }
 
     /* alinging headshots and contact info */
     .intro h2 {
@@ -515,9 +550,11 @@ li p {
 
 @media screen and (min-width:750px) {
 
+
     .block-content {
         padding-right: 20em;
         padding-left: 2em;
+        padding-bottom: 3em;
     }
 
     .block-content h2 {
@@ -529,14 +566,19 @@ li p {
     }
     
     .questions h2 {
-        margin-top: 5em;
-        margin-left: 5em;
+        margin-top: 3em;
         margin-bottom: 0;
+        margin-left: 2em;
     }
 
     .question {
         margin-top: 0;
         margin-bottom: 1em;
+        margin-left: 3em;
+    }
+
+    .questions {
+        margin-left: 4em;
     }
 
     /* adjusting headshot images on larger screens */
@@ -555,6 +597,7 @@ li p {
 
     /* adjusting contact logos on larger screen */
     .intro .contacts  {
+        display: flex;
         align-items: baseline;
     }
 
@@ -562,13 +605,21 @@ li p {
         border-radius: 0%;
         width: 2.7em;
         height: 2.7em;
-        padding-top: 1.2em;
+        margin:1em;
+        margin-right: 0.2em;
+        padding: 1em;
     }
+
+    /* .contacts .email {
+        margin-top: 1.5em;
+    } */
 
     .contacts .linkedin img {
         border-radius: 0%;
         width: 2.3em;
         height: 2.3em;
+        margin:1em;
+        padding: 1.2em;
     }
 
     /* adjusting size for logos on top og landing page */
@@ -581,6 +632,7 @@ li p {
     .headshots {
         flex-direction: row;
         padding: 0;
+        padding-left: 1em;
         
     }
 
@@ -610,9 +662,12 @@ li p {
     }
 
     /* adjusting alignment of features on larger screens */
-    /* .features {
-        margin-left: 3em;
+    .features {
         align-items: center;
+    }
+
+    .feature {
+        margin-right: 1em;
     }
 
     /* position ischool logo in footer */
@@ -628,6 +683,9 @@ li p {
         margin-right: 8em;
     }
 
+    .solution  {
+        margin-top: 3em;
+    }
 
     /* positioning footer aat bottom of site page */
     .footer {
@@ -654,6 +712,7 @@ li p {
     
     .copyright {
         float: right;
+        padding-bottom: 0.7em;
     }
         
 }
@@ -661,6 +720,35 @@ li p {
 
 
 @media screen and (min-width:900px) {
+
+    /* positioning content on top page of landing page ****FIXXXX**** */
+.cover-content {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 3em;
+    margin-bottom: 15em;
+}
+
+
+.heading {
+    width: 30em;        
+    padding-right: 5em;
+}
+
+.landing-img .border {
+    width: 25em;
+    height: 15em;
+    background-color: #4b2e83;
+    border-radius: 10%;
+    margin-top: 13em;
+    margin-left: 0;
+}
+
+.landing-img {
+    padding-right: 3em;
+}
+
 
     /* adjusting headshots sizing on larger pages */
 
@@ -686,4 +774,13 @@ li p {
 
 @media screen and (min-width:1200px) {
     
+.landing-img .border {
+    width: 32em;
+    height: 20em;
+}
+
+.headshots {
+    margin-left: 6em;
+}
+
 }

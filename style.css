@@ -68,6 +68,7 @@ li p {
 .heading {
     margin-top: 6em;
     margin-left:2em;
+    padding-right: 1em;
     font-style: italic;
     color: #252525;
     font-size: 20px;
@@ -75,6 +76,10 @@ li p {
 
 .heading h1 {
     font-size: 40px;
+}
+
+.heading h2{
+    font-size: 35px;
 }
 
 .heading p {
@@ -650,7 +655,7 @@ li p {
     .questions h2 {
         margin-top: 3em;
         margin-bottom: 0;
-        margin-left: 2em;
+        margin-left: 8em;
     }
 
     .question {
@@ -660,7 +665,7 @@ li p {
     }
 
     .questions {
-        margin-left: 4em;
+        margin-left: 0em;
     }
 
     .query li {
@@ -823,17 +828,32 @@ li p {
     justify-content: center;
     margin-left: 0;
     margin-right: 3em;
-    margin-bottom: 15em;
+    margin-bottom: 19.1em;
 }
 
 
 .heading {
-    width: 15em;        
+    width: 25em;        
     padding-right: 5em;
 }
 
-.heading  h1 {
-    font-size: 30px;
+.head {
+    margin-left: -4em;
+}
+
+.heading h1 {
+    font-size: 44px;
+    width:40em;
+}
+
+.heading h2{
+    font-size: 44px;
+    width:40em;
+}
+
+.heading p {
+    font-size: 16px;
+    width:40em;
 }
 
 .border {
@@ -842,7 +862,8 @@ li p {
     padding-top: 2em;
     padding-bottom: 1em;
     margin-bottom: 5em;
-    margin-right: 4em;
+    margin-right: 3em;
+    padding-left:10em;
     width: 30em;
 }
 
@@ -905,7 +926,7 @@ li p {
     margin-left: 10em;
     margin-right:6.5em;
     padding: 0;
-    width:35em;
+    width:30em;
     height: auto;
     border-radius: 0.9em;
     border: 10px solid #cccccc;

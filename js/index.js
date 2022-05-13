@@ -16,3 +16,4 @@ function header() {
         header.classList.remove("sticky");
     }
 }
+

@@ -6,6 +6,10 @@
 
  }
 
+ html {
+    overflow-x: hidden;
+  }
+
  p {
     font-size: 20px;
     margin-top: 1.5em;

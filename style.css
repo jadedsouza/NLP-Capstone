@@ -10,6 +10,24 @@
     overflow-x: hidden;
   }
 
+/* scroll stuff */
+  /* .revealUp {
+    opacity: 0;
+    visibility: hidden;
+  } */
+
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
  p {
     font-size: 20px;
     margin-top: 1.5em;
@@ -538,9 +556,9 @@ li p {
       .ham {
         display: none;
         align-items: flex-end;
-        min-width: 160px;
+        /* min-width: 160px;
         margin: 0;
-        padding: 0;
+        padding: 0; */
       }
       
       .dropdown input:checked~#hamitems {
@@ -552,7 +570,6 @@ li p {
     input[type=checkbox] {
         display: none;
     }
-
 
 
     .ham ul {
@@ -662,7 +679,11 @@ li p {
     }
 
     .feature {
-        margin-right: 2rem;
+        margin-right: 3rem;
+    }
+
+    .feature h3 {
+        margin-bottom: 1em;
     }
 
     .intro h2 {
@@ -673,6 +694,16 @@ li p {
         display: flex;
         justify-content: center;
     }
+    
+    .contacts {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacts .linkedin {
+        padding-right: 1em;
+    }
+
     
     /* aliging footer content on smaller screens */
 

@@ -704,12 +704,17 @@ li p {
     .contacts {
         display: flex;
         justify-content: center;
+        align-items: baseline;
     }
 
     .contacts .linkedin {
         padding-right: 1em;
+        padding-top: 1em;
     }
 
+    .contacts .email {
+        padding-top: 3em;
+    }
 
     /* aliging footer content on smaller screens */
 

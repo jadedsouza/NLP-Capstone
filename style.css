@@ -535,18 +535,19 @@ li p {
         padding-top: 0;
         width:3em;
     }
-/* 
+
      .dropdown {
         display: inline-block;
         padding: 0;
         margin: 0;
-      } */
+      }
 
       label {
         margin-right: 0;
         background-color: #4b2e83;
         padding: 1em;
         font-size: 1.1em;
+        margin-bottom: 1em;
       }
 
       label {
@@ -556,9 +557,7 @@ li p {
       .ham {
         display: none;
         align-items: flex-end;
-        /* min-width: 160px;
-        margin: 0;
-        padding: 0; */
+
       }
       
       .dropdown input:checked~#hamitems {
@@ -578,20 +577,26 @@ li p {
         padding: 0;
         width: 150px;
         background-color: #252525;
+        /* fixed links on smaller screens */
+        z-index: 2000;
+        position: relative;
       }
+
+     
       
       .ham ul li a {
         display: block;
         color: white;
+        font-weight: bold;
         padding: 8px 16px;
         text-decoration: none;
       }
       
-      .ham li a.active {
+      .ham ul li a.active {
         background-color: #4b2e83;
       }
       
-      .ham li a:hover:not(.active) {
+      .ham ul li a:hover:not(.active) {
         background-color: #4b2e83;
       }
 
@@ -704,7 +709,7 @@ li p {
         padding-right: 1em;
     }
 
-    
+
     /* aliging footer content on smaller screens */
 
     .footer {
